@@ -1,0 +1,289 @@
+body,
+html {
+    height: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.block {
+    display: block;
+    position: relative;
+
+    /* margin: 50px; */
+    -webkit-clip-path: polygon(0 5%, 100% 0, 100% 95%, 0 100%);
+    clip-path: polygon(5% 5%, 100% 0, 95% 95%, 0 100%);
+}
+
+.block img {
+    width: 100%;
+    height: auto;
+}
+.bg-img {
+    /* The image used */
+    background: linear-gradient(rgba(0, 0, 0, 0.24), rgba(0, 0, 0, 0.24)), url("homeMain.jpeg");
+
+    /* Control the height of the image */
+    min-height: 100%;
+    top: 0;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Add styles to the form container */
+.container1 {
+    position: absolute;
+    right: 15%;
+    top: 25%;
+    margin: 30px 20px;
+    max-width: 350px;
+    padding: 24px 16px;
+    background-color: white;
+}
+
+/* Full-width input fields */
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+/* Set a style for the submit button */
+.btn {
+    background-color: #4caf50;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+.btn:hover {
+    opacity: 1;
+}
+
+.back {
+    background-color: rgb(122, 68, 194);
+    padding: 10px 0;
+}
+.allDisp {
+    height: 100vh;
+}
+.statNew {
+    margin-left: 33%;
+    max-width: 500px;
+}
+.content img {
+    width: 60%;
+    margin-left: 5em;
+}
+.section_suptitle {
+    font-size: 2em;
+    color: linear-gradient(rgb(122, 68, 194), rgb(255, 255, 255));
+    margin-top: 3em;
+    margin-bottom: 3em;
+    text-align: center;
+}
+.sectionMy {
+    font-size: 1em;
+    color: black;
+    margin-top: -2em;
+    margin-bottom: 0.5em;
+    text-align: center;
+}
+.content {
+    padding-top: 2em;
+}
+
+.container_header {
+    max-width: 1200px; /*=1200px*/
+    /*Выравниваем по центру*/
+    margin: 0 auto;
+}
+
+.flex-5 {
+    flex: 41.66%;
+}
+
+.flex-6 {
+    flex: 50%;
+}
+
+.flex_row {
+    display: flex;
+    flex-direction: row;
+    /* padding: 5px; */
+}
+
+svg {
+    vertical-align: text-top;
+}
+.header_inner {
+    align-items: center;
+    /* padding-top: 1em; */
+}
+
+.space_around {
+    justify-content: space-around;
+}
+.header_logo {
+    font-size: 2em;
+    align-items: center;
+    font-weight: bold; /*Полужирный Шрифт*/
+    color: white;
+}
+
+header {
+    /* top: 0;
+    width: 100%;
+    position: fixed;
+    margin-bottom: 60px; */
+}
+header a {
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    vertical-align: top;
+    margin: 0 0.3em;
+
+    flex-grow: 1;
+    color: white;
+    font-size: 1.1em;
+    font-weight: bold;
+    text-transform: uppercase; /*Все буквы будут прописными */
+    transition: all 1s;
+}
+
+header a:hover {
+    font-size: 1.2em;
+    color: rgb(238, 238, 238);
+    border-bottom: 0.1em solid rgb(238, 238, 238);
+}
+
+header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+header li {
+    flex-grow: 1;
+}
+
+.header_logo img {
+    width: 4%;
+}
+
+.marg4 {
+    margin-bottom: 4em;
+}
+.section_text {
+    align-items: center;
+    width: 100%;
+    max-width: 35em;
+    color: black;
+    font-family: "Roboto Slab", serif;
+    font-size: 1em;
+    margin: auto auto;
+    padding-bottom: 0.5em;
+}
+
+.cent {
+    text-align: center;
+    align-items: center;
+    margin: 0 30%;
+}
+.myForm {
+    margin: 0 auto;
+    max-width: 400px;
+    /* margin-left: 31em; */
+    /* margin-top: 1em; */
+}
+table {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+    font-size: 14px;
+    border-radius: 10px;
+    border-spacing: 0;
+    text-align: center;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 2em;
+    width: 90%;
+    margin-left: 2em;
+    /* margin-right: 10em; */
+}
+th {
+    background: #bcebdd;
+    color: white;
+    text-shadow: 0 1px 1px #2d2020;
+    padding: 10px 80px;
+}
+td {
+    padding: 10px 0;
+}
+.mytr {
+    padding-bottom: 3em;
+}
+th,
+td {
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    border-color: white;
+}
+th:first-child,
+td:first-child {
+    text-align: left;
+}
+th:first-child {
+    border-top-left-radius: 10px;
+}
+th:last-child {
+    border-top-right-radius: 10px;
+    border-right: none;
+}
+.title {
+    padding: 20px 40px;
+    background: linear-gradient(rgb(122, 68, 194), rgba(141, 78, 224, 0.788), rgb(255, 255, 255));
+    color: white;
+}
+tr:last-child td:first-child {
+    border-radius: 0 0 0 10px;
+}
+tr:last-child td:last-child {
+    border-radius: 0 0 10px 0;
+}
+tr td:last-child {
+    border-right: none;
+}
+.app {
+    display: grid;
+    /* grid-column-gap: 15px; */
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
+
+.app img {
+    width: 100%;
+    height: 241.29px;
+}
+
+footer {
+    background-color: rgb(122, 68, 194);
+    height: 50px;
+}
+
+header {
+    padding: 20px 0;
+}
